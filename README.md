@@ -3,7 +3,7 @@
 Immo_Eliza_scraping is a project intended to gather as much readable data as possible for the pseudo realestate company called ImmoEliza. With this project, we were tasked to gather field attributes from as many (~10000) houses in Belgium. Field attributes include information like locality, type of property, price, area, no. of rooms, no. of bathrooms etc.
 
 The python file included here is written to scrap a website for such information/field attributes, convert them into a json object for each individual house and append it to a .CSV file.
-Once we have a csv file the data is cleaned and converted to a readable dataset.
+Once we have a .CSV file the data is cleaned and converted to a readable dataset.
 
 This data is exclusive to houses within Belgium, but can be changed given you have a source from which a list of links can be created for your needs.
 
