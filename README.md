@@ -9,7 +9,7 @@ This data is exclusive to houses within Belgium, but can be changed given you ha
 
 ## Installation
 
-In order to run this program, make sure you have the python packages: Pandas, selenium and BeautifulSoup installed. If you do not wish to run this programme and simply wwant it to understand how the data was arrived at then these packages will not be necessary.
+In order to run this program, make sure you have the python packages: Pandas, selenium and BeautifulSoup installed. If you do not wish to run this programme and simply want it to understand how the data was arrived at then these packages will not be necessary.
 
 
 ## Usage
