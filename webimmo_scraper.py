@@ -44,11 +44,8 @@ for loop in range (1,MAXPAGE):
         if type(elem) == str:
             if "https://www.immoweb.be/en/classified" in elem :
                 home_links.append(elem)
-                #fp = open("home_links.txt","a+")
-                #fp.write(elem+"\n")
-                #fp.close()
+              
                
-    
 #remove duplicate url links
 mycleanlist = list(dict.fromkeys(home_links))
 
