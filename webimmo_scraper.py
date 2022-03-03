@@ -3,6 +3,19 @@
 Created on Mon Feb 28 10:11:27 2022
 
 This program will scrape the website 'immoweb.be'
+The program will first filter out the url links to the houses.
+(aprox. 10000 urls)
+
+The second part will go trouhg these links and will download the data
+related to every house.
+
+Using Soup we can import the data in a json object.
+
+After removing the duplicates the data is then storen in a csv file.
+
+The csv file still needs some cleaning up.
+We use Excel for removing bad entries and filling empty fields aswell as
+changing the yes/no fields to a 1/0 value.
 
 @authors: Group Mousumi/Anzeem/Mohammed
 """
@@ -18,7 +31,10 @@ import pandas as pd
 MAXPAGE=333
 home_links=[]
 for loop in range (1,MAXPAGE):
+
+    #select just one page containing 31 links to houses
     url="https://www.immoweb.be/en/search/house/for-sale?countries=BE&page="+str(loop)
+
     # The selenium.webdriver module provides all the implementations of WebDriver
     # Firefox has to be installed on your system
     # Here, we create instance of Firefox WebDriver.
